@@ -23,6 +23,42 @@
 
 {% block content %}
 
+<section class="appointment">
+    <div class="appointment-heading">Appointment Booking</div>
 
+    <div class="block">
+        <div class="grid">
+            <div class="box">
+                <label for="purpose" class="label">Purpose</label>
+                <input type="text" name="purpose" id="purpose" class="input" placeholder="State Department" required>
+            </div>
+
+            <div class="box">
+                <label for="choose_doctor" class="label">Choose Doctor</label>
+                <input type="text" name="choose_doctor" id="choose_doctor" class="input" placeholder="Choose Doctor" required>
+            </div>
+
+            <div class="box">
+                <label for="choose_date" class="label">Choose Date</label>
+                <input type="Date" name="choose_date" id="choose_date" class="input" required>
+            </div>
+
+            <div class="box">
+                <label for="preferred_time" class="label">Preferred Time</label>
+                <input type="time" name="preferred_time" id="preferred_time" class="input" required>
+            </div>
+
+            <button class="book-appointment" type="submit">
+                <div class="btn">Book Appointment</div>
+            </button>
+        </div>
+    </div>
+</section>
+
+<a href="http://" target="_blank" rel="noopener noreferrer">
+    <div class="whatsapp-button">
+        <img src="" alt="whatsapp">
+    </div>
+</a>
 
 {% endblock %}
